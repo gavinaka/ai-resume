@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#faf8f2">
+    <title>AkaGavin - Infinite Canvas</title>
+    <link rel="icon" type="image/jpeg" href="assets/akagavin-portrait.jpg">
+    <link rel="preload" href="assets/fonts/fira-code-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="canvas.css">
+  </head>
+  <body>
+    <div class="canvas-app">
+      <header class="canvas-toolbar">
+        <div class="canvas-brand">
+          <span class="canvas-brand-mark">AG</span>
+          <span>AkaGavin Canvas</span>
+        </div>
+        <div class="canvas-actions" aria-label="画布工具">
+          <button type="button" class="layers-toggle" id="layersToggle" aria-controls="layersPanel" aria-expanded="false" title="打开图层">
+            <span aria-hidden="true">☰</span><span class="button-label">图层</span>
+          </button>
+          <button type="button" id="toolbarAddCard" title="新建卡片"><span aria-hidden="true">＋</span><span class="button-label">新建卡片</span></button>
+          <button type="button" id="connectModeBtn" title="从一张卡拖到另一张卡"><span aria-hidden="true">⌘</span><span class="button-label">连线</span></button>
+          <button type="button" id="undoBtn" title="撤销 Ctrl+Z" disabled>
+            <span aria-hidden="true">↩</span><span class="button-label">撤销</span><span id="undoCount" hidden>0</span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="layers-panel" id="layersPanel" aria-label="图层">
+        <h1>✦ Layers</h1>
+        <div class="layer-list" id="layerList"></div>
+        <button type="button" class="layer-add" id="layerAddCard">＋ 新建</button>
+        <div class="minimap-block">
+          <h2>✦ Minimap</h2>
+          <div class="minimap" id="minimap" aria-label="迷你地图">
+            <div class="minimap-viewport" id="minimapViewport"></div>
+          </div>
+        </div>
+      </aside>
+      <button type="button" class="layers-backdrop" id="layersBackdrop" aria-label="关闭图层" tabindex="-1"></button>
+
+      <main class="canvas-area" id="canvasArea" aria-label="可编辑无限画布">
+        <div class="canvas-grid" aria-hidden="true"></div>
+        <div class="canvas-transform" id="canvasTransform">
+          <svg class="connections" id="connectionsSvg" aria-hidden="true"></svg>
+          <div class="cards-layer" id="cardsLayer"></div>
+        </div>
+      </main>
+
+      <button type="button" class="evidence-backdrop" id="evidenceBackdrop" aria-label="关闭证据档案" tabindex="-1"></button>
+      <aside class="evidence-inspector" id="evidenceInspector" aria-label="项目证据档案" aria-hidden="true">
+        <header class="evidence-inspector-bar">
+          <span>PUBLIC EVIDENCE</span>
+          <button type="button" id="evidenceClose" aria-label="关闭证据档案" title="关闭">×</button>
+        </header>
+        <div class="evidence-inspector-content" id="evidenceInspectorContent"></div>
+      </aside>
+
+      <div class="zoom-controls" aria-label="缩放控制">
+        <button type="button" id="zoomOut" aria-label="缩小">−</button>
+        <span id="zoomPct">85%</span>
+        <button type="button" id="zoomIn" aria-label="放大">＋</button>
+        <button type="button" id="zoomFit" title="适合视图">⊞</button>
+        <button type="button" id="saveLayout" title="保存布局">保存</button>
+      </div>
+
+      <section class="template-panel" id="templatePanel" aria-label="选择卡片模板" hidden>
+        <h2>选择卡片模板</h2>
+        <div class="template-grid">
+          <button type="button" data-template="basic"><b>文</b><span>文字卡</span></button>
+          <button type="button" data-template="quote"><b>引</b><span>引用卡</span></button>
+          <button type="button" data-template="image"><b>图</b><span>图片卡</span></button>
+          <button type="button" data-template="sticky"><b>签</b><span>便利贴</span></button>
+          <button type="button" data-template="dark"><b>夜</b><span>深色卡</span></button>
+          <button type="button" data-template="link"><b>链</b><span>链接卡</span></button>
+        </div>
+      </section>
+
+      <input type="file" id="imageInput" accept="image/*" hidden>
+      <div class="canvas-toast" id="canvasToast" role="status" aria-live="polite"></div>
+    </div>
+
+    <script src="evidence-data.js"></script>
+    <script src="site-data.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#070809">
+    <meta name="description" content="AkaGavin 的可拖动证据关系图，用于检查公开项目、原则、能力与证据之间的结构关系。">
+    <title>AkaGavin — Evidence Room</title>
+    <link rel="icon" type="image/jpeg" href="assets/akagavin-portrait.jpg">
+    <link rel="preload" href="assets/fonts/fira-code-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/barlow-condensed-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/akagavin-portrait.jpg" as="image" fetchpriority="high">
+    <link rel="stylesheet" href="canvas.css?v=3b4441ac823d">
+  </head>
+  <body>
+    <main class="evidence-room">
+      <div class="room-grain" aria-hidden="true"></div>
+      <header class="room-toolbar">
+        <a class="room-brand" href="index.html#systems" target="_top">
+          <span aria-hidden="true">←</span>
+          <strong>EVIDENCE ROOM</strong>
+          <small>AKA GAVIN / 01</small>
+        </a>
+        <div class="room-mode">
+          <i aria-hidden="true"></i>
+          <span>RELATION MODE</span>
+        </div>
+        <button class="room-help" id="roomHelp" type="button" aria-pressed="false">操作说明</button>
+      </header>
+
+      <section class="room-help-panel" id="roomHelpPanel" hidden>
+        <span>拖动空白区域移动镜头</span>
+        <span>滚轮或双指缩放</span>
+        <span>拖动档案重排关系</span>
+        <span>选择档案查看证据</span>
+      </section>
+
+      <p class="sr-only" id="roomInstructions">拖动空白区域移动镜头，滚轮或双指缩放，选择档案查看详情。键盘方向键移动镜头，加号减号缩放，数字零重置。</p>
+      <section
+        class="room-viewport"
+        id="roomViewport"
+        aria-label="可拖动缩放的证据关系图"
+        aria-describedby="roomInstructions"
+        tabindex="0"
+      >
+        <div class="room-grid" aria-hidden="true"></div>
+        <div class="room-world" id="roomWorld">
+          <svg class="connection-layer" id="connectionLayer" width="2600" height="1800" viewBox="0 0 2600 1800" aria-hidden="true"></svg>
+          <div class="node-layer" id="nodeLayer"></div>
+        </div>
+        <div class="camera-reticle" aria-hidden="true"><span></span></div>
+      </section>
+
+      <aside class="evidence-inspector" id="evidenceInspector" aria-live="polite" aria-hidden="true" tabindex="-1">
+        <button class="inspector-close" id="inspectorClose" type="button" aria-label="关闭档案详情">×</button>
+        <div id="inspectorContent">
+          <p class="inspector-kicker">SELECT A DOSSIER</p>
+          <h2>选择一份档案，检查它和其它证据的关系。</h2>
+        </div>
+      </aside>
+
+      <footer class="room-hud">
+        <div class="hud-position">
+          <span>CAMERA</span>
+          <output id="cameraOutput">X 0000 / Y 0000</output>
+        </div>
+        <div class="hud-count">
+          <span>NODES</span>
+          <output id="nodeCount">00</output>
+        </div>
+        <div class="zoom-controls" aria-label="缩放控制">
+          <button id="zoomOut" type="button" aria-label="缩小">−</button>
+          <button id="resetView" type="button"><span class="sr-only">重置视图</span><span id="zoomOutput">100%</span></button>
+          <button id="zoomIn" type="button" aria-label="放大">+</button>
+        </div>
+      </footer>
+    </main>
+
+    <script src="evidence-data.js?v=bb141aa2b5b5"></script>
+    <script src="site-data.js?v=78038872fe61"></script>
+    <script src="canvas.js?v=ff9d5d554a29"></script>
+  </body>
+</html>

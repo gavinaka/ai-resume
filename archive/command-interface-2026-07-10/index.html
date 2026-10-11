@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="AkaGavin Command Interface：一个关于业务、市场、资产纪律与 AI 工作流的个人决策系统展示页。"
+    >
+    <title>AkaGavin Command Interface</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="AkaGavin Command Interface">
+        <span class="brand-mark">AG</span>
+        <span class="brand-copy">
+          <strong>AkaGavin</strong>
+          <small>Command Interface</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#thesis">Thesis</a>
+        <a href="#stack">Stack</a>
+        <a href="#systems">Systems</a>
+        <a href="#doctrine">Doctrine</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="commandCanvas" class="command-canvas" aria-hidden="true"></canvas>
+        <div class="hero-mask" aria-hidden="true"></div>
+
+        <div class="hero-shell">
+          <div class="hero-main">
+            <p class="eyebrow">A personal operating system for uncertainty</p>
+            <h1 id="hero-title">
+              <span>AkaGavin</span>
+              <span>Command</span>
+              <span>Interface</span>
+            </h1>
+            <p class="hero-copy">
+              把业务经营、交易纪律、资产框架和 AI Agent 工作流收束成一套可观察、可执行、可复盘的个人决策系统。
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button primary" href="#systems">进入系统档案</a>
+              <a class="button secondary" href="#doctrine">查看决策原则</a>
+            </div>
+          </div>
+
+          <aside class="command-panel" aria-label="Profile command panel">
+            <div class="panel-head">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>Public Profile Kernel</span>
+            </div>
+            <dl class="telemetry-list">
+              <div>
+                <dt>Identity</dt>
+                <dd>System thinker / B2B SaaS operator</dd>
+              </div>
+              <div>
+                <dt>Primary project</dt>
+                <dd>Trading system validation</dd>
+              </div>
+              <div>
+                <dt>AI posture</dt>
+                <dd>Read-only sources, auditable agents</dd>
+              </div>
+              <div>
+                <dt>Public boundary</dt>
+                <dd>No private assets, accounts, tokens, or live trades</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="signal-strip" aria-label="Operating signals">
+          <article>
+            <span>01</span>
+            <strong>Work</strong>
+            <p>现金流基座</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Trading</strong>
+            <p>增长核心，先验证</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Assets</strong>
+            <p>保守纪律，延后扩张</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>AI Agents</strong>
+            <p>只读真源，可审计</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="thesis" class="section thesis-section" aria-labelledby="thesis-title">
+        <div class="section-inner thesis-layout">
+          <div class="section-heading">
+            <p class="section-kicker">Core Thesis</p>
+            <h2 id="thesis-title">真正的个人竞争力，是能否把复杂问题转成稳定系统。</h2>
+          </div>
+          <div class="thesis-copy">
+            <p>
+              这不是一份传统简历，而是一个公开版操作界面：展示 AkaGavin 如何理解业务、市场、资产和 AI 工具，并把它们纳入同一套决策纪律。
+            </p>
+            <p>
+              页面只呈现方法论、结构和公开方向。具体资产、账户、交易明细、雇主敏感信息、家庭信息和私有数据源全部被排除。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="section" aria-labelledby="stack-title">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">Strategic Stack</p>
+            <h2 id="stack-title">战略优先级不是愿望清单，而是资源分配规则。</h2>
+          </div>
+
+          <div class="priority-stack">
+            <article class="priority-item work">
+              <div class="priority-index">01</div>
+              <div>
+                <h3>工作现金流基座</h3>
+                <p>B2B SaaS 经营现场提供现实约束：客户预算、销售动作、商户生存压力、团队执行和现金流稳定性。</p>
+              </div>
+              <span>Stability Layer</span>
+            </article>
+            <article class="priority-item trading">
+              <div class="priority-index">02</div>
+              <div>
+                <h3>交易系统增长核心</h3>
+                <p>交易不是情绪下注，而是验证结构、订单流、执行纪律和样本质量的系统工程。</p>
+              </div>
+              <span>Validation Layer</span>
+            </article>
+            <article class="priority-item assets">
+              <div class="priority-index">03</div>
+              <div>
+                <h3>资产纪律与缓冲</h3>
+                <p>资产配置服务于长期稳定，不为短期效率牺牲安全边际。先守住缓冲，再谈进攻。</p>
+              </div>
+              <span>Defense Layer</span>
+            </article>
+            <article class="priority-item agents">
+              <div class="priority-index">04</div>
+              <div>
+                <h3>AI Agent 操作系统</h3>
+                <p>AI 负责采集、检查、归纳和质疑；关键数据和写权限保留在人手里，避免黑箱漂移。</p>
+              </div>
+              <span>Leverage Layer</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="systems" class="section section-ink" aria-labelledby="systems-title">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">System Dossiers</p>
+            <h2 id="systems-title">系统档案：公开可讲的是结构，不是私密数据。</h2>
+          </div>
+
+          <div class="dossier-grid">
+            <article class="dossier">
+              <div class="dossier-topline">
+                <span>Market OS</span>
+                <b>Process first</b>
+              </div>
+              <h3>交易计划系统</h3>
+              <p>
+                将交易拆成结构判断、流动性观察、执行计划和复盘评价。单次盈利不能证明流程正确，违反计划的盈利仍然要被记录为系统问题。
+              </p>
+              <ul>
+                <li>公开：纪律、样本、风险控制</li>
+                <li>隐藏：账户、收益、仓位、挂单</li>
+              </ul>
+            </article>
+
+            <article class="dossier accent-amber">
+              <div class="dossier-topline">
+                <span>Finance OS</span>
+                <b>Calculation first</b>
+              </div>
+              <h3>个人财务 Agent</h3>
+              <p>
+                用确定性计算层处理现金流、预算偏差和资产偏离；AI 只负责解释、归因和建议，不能替代底层数据口径。
+              </p>
+              <ul>
+                <li>公开：计算层与判断层分离</li>
+                <li>隐藏：收入、净资产、家庭结构</li>
+              </ul>
+            </article>
+
+            <article class="dossier accent-rust">
+              <div class="dossier-topline">
+                <span>Asset OS</span>
+                <b>Duration first</b>
+              </div>
+              <h3>长期资产框架</h3>
+              <p>
+                关注耐久现金流、估值安全边际和跨赛道分散。它不是短线交易的延伸，而是资产负债表稳定性的组成部分。
+              </p>
+              <ul>
+                <li>公开：原则、口径、研究方向</li>
+                <li>隐藏：具体标的、价格、金额</li>
+              </ul>
+            </article>
+
+            <article class="dossier accent-green">
+              <div class="dossier-topline">
+                <span>Agent OS</span>
+                <b>Audit first</b>
+              </div>
+              <h3>多 Agent 治理</h3>
+              <p>
+                每个 agent 负责一个领域，跨域默认只读。真源数据由人确认，写权限必须被单独批准，避免自动化污染真实记录。
+              </p>
+              <ul>
+                <li>公开：治理原则与工作流</li>
+                <li>隐藏：token、数据库、私有路径</li>
+              </ul>
+            </article>
+
+            <article class="dossier accent-silver">
+              <div class="dossier-topline">
+                <span>Business OS</span>
+                <b>Reality first</b>
+              </div>
+              <h3>B2B SaaS 经营视角</h3>
+              <p>
+                从小微商户真实现金流、销售转化、产品价值和弱需求环境出发，判断业务动作是否真的能帮助客户活下来。
+              </p>
+              <ul>
+                <li>公开：经营现场与结构判断</li>
+                <li>隐藏：公司内部数据和敏感信息</li>
+              </ul>
+            </article>
+
+            <article class="dossier accent-blue">
+              <div class="dossier-topline">
+                <span>Research OS</span>
+                <b>Evidence first</b>
+              </div>
+              <h3>宏观与业务研究框架</h3>
+              <p>
+                将宏观、行业、交易和业务信号拆成证据链，而不是凭单一观点下结论。重点是形成可复查的判断路径。
+              </p>
+              <ul>
+                <li>公开：研究主题与方法</li>
+                <li>隐藏：未核验结论和私有笔记</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="doctrine" class="section doctrine-section" aria-labelledby="doctrine-title">
+        <div class="section-inner doctrine-layout">
+          <div class="section-heading sticky-copy">
+            <p class="section-kicker">Decision Doctrine</p>
+            <h2 id="doctrine-title">决策原则必须像协议一样稳定。</h2>
+            <p class="section-lead">
+              这些规则约束的是判断质量，而不是制造漂亮叙事。它们决定系统长期是否可复盘、可审计、可升级。
+            </p>
+          </div>
+
+          <div class="doctrine-list">
+            <article>
+              <span>RULE 01</span>
+              <h3>事实、推断、假设、未知分层。</h3>
+              <p>任何复杂判断先拆层，防止把主观看法误当成事实。</p>
+            </article>
+            <article>
+              <span>RULE 02</span>
+              <h3>看不懂就不做。</h3>
+              <p>拒绝用仓位或动作掩盖认知空白，空手也是一种决策。</p>
+            </article>
+            <article>
+              <span>RULE 03</span>
+              <h3>先验证样本，再扩大规模。</h3>
+              <p>规模是验证后的结果，不是验证前的赌注。</p>
+            </article>
+            <article>
+              <span>RULE 04</span>
+              <h3>流程错误不能被结果洗白。</h3>
+              <p>盈利但违反计划仍然是错误；系统质量和单次结果分开评价。</p>
+            </article>
+            <article>
+              <span>RULE 05</span>
+              <h3>真源只读，写入审慎。</h3>
+              <p>关键数据由人确认，agent 默认只读消费，避免自动化污染源数据。</p>
+            </article>
+            <article>
+              <span>RULE 06</span>
+              <h3>能计算的不要交给感觉。</h3>
+              <p>确定性计算层负责口径和结果，AI 判断层负责解释、质疑和行动建议。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section section-ink" aria-labelledby="research-title">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">Research Ledger</p>
+            <h2 id="research-title">长期研究不是兴趣列表，而是决策输入源。</h2>
+          </div>
+
+          <div class="research-grid">
+            <article>
+              <span>Macro</span>
+              <h3>中国宏观与居民资产负债表</h3>
+              <p>观察消费、就业、现金流压力和供需分化，作为业务与资产判断的背景变量。</p>
+            </article>
+            <article>
+              <span>Business</span>
+              <h3>小微商户与 B2B SaaS</h3>
+              <p>关注客户是否真的愿意付费，以及产品是否帮助商户降低压力、提高周转。</p>
+            </article>
+            <article>
+              <span>Market</span>
+              <h3>加密市场结构</h3>
+              <p>以流动性、订单流、结构和执行纪律为核心，而不是依赖滞后指标制造确定感。</p>
+            </article>
+            <article>
+              <span>Assets</span>
+              <h3>A 股现金流资产</h3>
+              <p>从股息、久期、央国企资产和安全边际角度研究长期配置框架。</p>
+            </article>
+            <article>
+              <span>AI</span>
+              <h3>个人 Agent 工作流</h3>
+              <p>研究如何让 Codex、Claude、Notion 和本地文件形成低漂移、可审计的协作系统。</p>
+            </article>
+            <article>
+              <span>Review</span>
+              <h3>复盘与治理机制</h3>
+              <p>把失败归因、流程偏离和证据缺口记录下来，防止系统被短期结果污染。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section boundary-section" aria-labelledby="boundary-title">
+        <div class="section-inner boundary-layout">
+          <div>
+            <p class="section-kicker">Public Boundary</p>
+            <h2 id="boundary-title">公开表达要锋利，但边界要硬。</h2>
+          </div>
+          <div class="boundary-grid">
+            <article>
+              <strong>Allowed</strong>
+              <p>方法论、系统结构、公开身份、长期研究方向、B2B SaaS 背景、AI 工作流原则。</p>
+            </article>
+            <article>
+              <strong>Redacted</strong>
+              <p>真实姓名、家庭信息、资产金额、交易账户、持仓挂单、token、Notion ID、雇主内部信息。</p>
+            </article>
+            <article>
+              <strong>Review Needed</strong>
+              <p>Email、微信二维码、GitHub、LinkedIn、Notion、公开文章、头像和可公开作品链接。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout">
+          <div class="section-heading">
+            <p class="section-kicker">Contact Packet</p>
+            <h2 id="contact-title">联系方式先占位，等你审核后替换为真实公开入口。</h2>
+            <p class="section-lead">
+              第一版已经把叙事、视觉和公开边界填满。下一步只需要加入你确认可公开的链接和身份素材。
+            </p>
+          </div>
+
+          <div class="contact-console">
+            <div>
+              <span>Public Name</span>
+              <strong>AkaGavin</strong>
+            </div>
+            <div>
+              <span>Primary Interface</span>
+              <strong>Personal Decision System</strong>
+            </div>
+            <div>
+              <span>Location Signal</span>
+              <strong>Shenzhen / Hong Kong</strong>
+            </div>
+            <div>
+              <span>Email</span>
+              <strong>Pending review</strong>
+            </div>
+            <div>
+              <span>Social Links</span>
+              <strong>Pending review</strong>
+            </div>
+            <div>
+              <span>Publish Status</span>
+              <strong>Static site ready for audit</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AkaGavin Command Interface</span>
+      <span>Public profile. Private data redacted by design.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

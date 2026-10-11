@@ -1,0 +1,784 @@
+{
+  "generatedAt": "2026-07-13T04:33:46.130Z",
+  "baseUrl": "https://akagavin-evidence-noir.pages.dev",
+  "checks": 100,
+  "passed": 100,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "name": "wide home: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "wide home: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "wide home: no console errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "wide home: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "wide home: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "wide home: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "wide home: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "wide home: responsive portrait source",
+      "passed": true,
+      "details": {
+        "currentSrc": "https://akagavin-evidence-noir.pages.dev/assets/akagavin-editorial.jpg",
+        "naturalWidth": 2560,
+        "naturalHeight": 3840
+      }
+    },
+    {
+      "name": "wide home: scene cut has no previous-scene residue",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "sectionTop": 0,
+        "headingTop": 286,
+        "headingBottom": 515.3125,
+        "portraitWidth": 739.328125,
+        "portraitHeight": 720,
+        "portraitRatio": 0.9738571760677981,
+        "principlesScrollable": false,
+        "capabilitiesScrollable": false,
+        "systemsHeight": 1118.625,
+        "capabilityHeight": 1141.5
+      }
+    },
+    {
+      "name": "wide home: second-scene thesis clears fixed header",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "sectionTop": 0,
+        "headingTop": 286,
+        "headingBottom": 515.3125,
+        "portraitWidth": 739.328125,
+        "portraitHeight": 720,
+        "portraitRatio": 0.9738571760677981,
+        "principlesScrollable": false,
+        "capabilitiesScrollable": false,
+        "systemsHeight": 1118.625,
+        "capabilityHeight": 1141.5
+      }
+    },
+    {
+      "name": "wide home: portrait keeps editorial frame",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "sectionTop": 0,
+        "headingTop": 286,
+        "headingBottom": 515.3125,
+        "portraitWidth": 739.328125,
+        "portraitHeight": 720,
+        "portraitRatio": 0.9738571760677981,
+        "principlesScrollable": false,
+        "capabilitiesScrollable": false,
+        "systemsHeight": 1118.625,
+        "capabilityHeight": 1141.5
+      }
+    },
+    {
+      "name": "wide home: mobile dense sections use horizontal reels",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "sectionTop": 0,
+        "headingTop": 286,
+        "headingBottom": 515.3125,
+        "portraitWidth": 739.328125,
+        "portraitHeight": 720,
+        "portraitRatio": 0.9738571760677981,
+        "principlesScrollable": false,
+        "capabilitiesScrollable": false,
+        "systemsHeight": 1118.625,
+        "capabilityHeight": 1141.5
+      }
+    },
+    {
+      "name": "wide home: mobile section heights remain editorially bounded",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "sectionTop": 0,
+        "headingTop": 286,
+        "headingBottom": 515.3125,
+        "portraitWidth": 739.328125,
+        "portraitHeight": 720,
+        "portraitRatio": 0.9738571760677981,
+        "principlesScrollable": false,
+        "capabilitiesScrollable": false,
+        "systemsHeight": 1118.625,
+        "capabilityHeight": 1141.5
+      }
+    },
+    {
+      "name": "wide home: rapid navigation keeps latest intent",
+      "passed": true,
+      "details": "#proof"
+    },
+    {
+      "name": "wide home: active chapter announced",
+      "passed": true,
+      "details": "page"
+    },
+    {
+      "name": "wide home: chapter target aligns without scene bleed",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "proofTop": 0.25,
+        "countRight": 2223.203125,
+        "railLeft": 2422,
+        "railHidden": false
+      }
+    },
+    {
+      "name": "wide home: desktop proof count clears chapter rail",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "proofTop": 0.25,
+        "countRight": 2223.203125,
+        "railLeft": 2422,
+        "railHidden": false
+      }
+    },
+    {
+      "name": "wide home: mobile chapter rail yields to reading",
+      "passed": true,
+      "details": {
+        "headerBottom": 68,
+        "proofTop": 0.25,
+        "countRight": 2223.203125,
+        "railLeft": 2422,
+        "railHidden": false
+      }
+    },
+    {
+      "name": "wide home: all public dossiers rendered",
+      "passed": true,
+      "details": 11
+    },
+    {
+      "name": "wide home: dossier rows are unique",
+      "passed": true,
+      "details": 11
+    },
+    {
+      "name": "mobile home: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "mobile home: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile home: no console errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile home: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "mobile home: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile home: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "mobile home: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "mobile home: responsive portrait source",
+      "passed": true,
+      "details": {
+        "currentSrc": "https://akagavin-evidence-noir.pages.dev/assets/akagavin-editorial-960.jpg",
+        "naturalWidth": 389,
+        "naturalHeight": 584
+      }
+    },
+    {
+      "name": "mobile home: scene cut has no previous-scene residue",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "sectionTop": 0,
+        "headingTop": 176,
+        "headingBottom": 356.3125,
+        "portraitWidth": 390,
+        "portraitHeight": 487.5,
+        "portraitRatio": 1.25,
+        "principlesScrollable": true,
+        "capabilitiesScrollable": true,
+        "systemsHeight": 1027.125,
+        "capabilityHeight": 1364.4375
+      }
+    },
+    {
+      "name": "mobile home: second-scene thesis clears fixed header",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "sectionTop": 0,
+        "headingTop": 176,
+        "headingBottom": 356.3125,
+        "portraitWidth": 390,
+        "portraitHeight": 487.5,
+        "portraitRatio": 1.25,
+        "principlesScrollable": true,
+        "capabilitiesScrollable": true,
+        "systemsHeight": 1027.125,
+        "capabilityHeight": 1364.4375
+      }
+    },
+    {
+      "name": "mobile home: portrait keeps editorial frame",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "sectionTop": 0,
+        "headingTop": 176,
+        "headingBottom": 356.3125,
+        "portraitWidth": 390,
+        "portraitHeight": 487.5,
+        "portraitRatio": 1.25,
+        "principlesScrollable": true,
+        "capabilitiesScrollable": true,
+        "systemsHeight": 1027.125,
+        "capabilityHeight": 1364.4375
+      }
+    },
+    {
+      "name": "mobile home: mobile dense sections use horizontal reels",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "sectionTop": 0,
+        "headingTop": 176,
+        "headingBottom": 356.3125,
+        "portraitWidth": 390,
+        "portraitHeight": 487.5,
+        "portraitRatio": 1.25,
+        "principlesScrollable": true,
+        "capabilitiesScrollable": true,
+        "systemsHeight": 1027.125,
+        "capabilityHeight": 1364.4375
+      }
+    },
+    {
+      "name": "mobile home: mobile section heights remain editorially bounded",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "sectionTop": 0,
+        "headingTop": 176,
+        "headingBottom": 356.3125,
+        "portraitWidth": 390,
+        "portraitHeight": 487.5,
+        "portraitRatio": 1.25,
+        "principlesScrollable": true,
+        "capabilitiesScrollable": true,
+        "systemsHeight": 1027.125,
+        "capabilityHeight": 1364.4375
+      }
+    },
+    {
+      "name": "mobile home: rapid navigation keeps latest intent",
+      "passed": true,
+      "details": "#proof"
+    },
+    {
+      "name": "mobile home: active chapter announced",
+      "passed": true,
+      "details": "page"
+    },
+    {
+      "name": "mobile home: chapter target aligns without scene bleed",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "proofTop": -0.109375,
+        "countRight": 368,
+        "railLeft": 8,
+        "railHidden": true
+      }
+    },
+    {
+      "name": "mobile home: desktop proof count clears chapter rail",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "proofTop": -0.109375,
+        "countRight": 368,
+        "railLeft": 8,
+        "railHidden": true
+      }
+    },
+    {
+      "name": "mobile home: mobile chapter rail yields to reading",
+      "passed": true,
+      "details": {
+        "headerBottom": 58,
+        "proofTop": -0.109375,
+        "countRight": 368,
+        "railLeft": 8,
+        "railHidden": true
+      }
+    },
+    {
+      "name": "mobile home: all public dossiers rendered",
+      "passed": true,
+      "details": 11
+    },
+    {
+      "name": "mobile home: dossier rows are unique",
+      "passed": true,
+      "details": 11
+    },
+    {
+      "name": "desktop project: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "desktop project: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop project: no console errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop project: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "desktop project: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop project: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "desktop project: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "desktop project: six-part evidence architecture",
+      "passed": true,
+      "details": {
+        "navItems": 6,
+        "protocolBlocks": 4,
+        "protocolItems": 15,
+        "evidenceRecords": 9,
+        "title": "Technical expert"
+      }
+    },
+    {
+      "name": "desktop project: four protocol dimensions",
+      "passed": true,
+      "details": {
+        "navItems": 6,
+        "protocolBlocks": 4,
+        "protocolItems": 15,
+        "evidenceRecords": 9,
+        "title": "Technical expert"
+      }
+    },
+    {
+      "name": "desktop project: protocol is operationally granular",
+      "passed": true,
+      "details": 15
+    },
+    {
+      "name": "mobile project: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "mobile project: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile project: no console errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile project: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "mobile project: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile project: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "mobile project: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "mobile project: six-part evidence architecture",
+      "passed": true,
+      "details": {
+        "navItems": 6,
+        "protocolBlocks": 4,
+        "protocolItems": 15,
+        "evidenceRecords": 9,
+        "title": "Technical expert"
+      }
+    },
+    {
+      "name": "mobile project: four protocol dimensions",
+      "passed": true,
+      "details": {
+        "navItems": 6,
+        "protocolBlocks": 4,
+        "protocolItems": 15,
+        "evidenceRecords": 9,
+        "title": "Technical expert"
+      }
+    },
+    {
+      "name": "mobile project: protocol is operationally granular",
+      "passed": true,
+      "details": 15
+    },
+    {
+      "name": "desktop canvas: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "desktop canvas: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop canvas: no console errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop canvas: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "desktop canvas: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop canvas: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "desktop canvas: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "desktop canvas: evidence graph complete",
+      "passed": true,
+      "details": {
+        "nodes": 18,
+        "paths": 23,
+        "zoom": "48%",
+        "transform": "translate3d(89.6268px, -13.4122px, 0px) scale(0.484902)"
+      }
+    },
+    {
+      "name": "desktop canvas: inspector receives focus",
+      "passed": true,
+      "details": {
+        "focus": "evidenceInspector",
+        "hidden": "false",
+        "expanded": "true"
+      }
+    },
+    {
+      "name": "desktop canvas: close restores originating node focus",
+      "passed": true,
+      "details": "technical-expert"
+    },
+    {
+      "name": "desktop canvas: node drag changes position without duplication",
+      "passed": true,
+      "details": {
+        "beforeDrag": {
+          "x": 1044.8846435546875,
+          "y": 258.79388427734375,
+          "width": 145.470703125,
+          "height": 96.05615234375
+        },
+        "afterDrag": {
+          "x": 1114.8846435546875,
+          "y": 303.7939147949219,
+          "width": 145.470703125,
+          "height": 96.05612182617188
+        }
+      }
+    },
+    {
+      "name": "desktop canvas: wheel changes zoom",
+      "passed": true,
+      "details": {
+        "before": "48%",
+        "after": "80%"
+      }
+    },
+    {
+      "name": "desktop canvas: resize preserves a valid camera transform",
+      "passed": true,
+      "details": {
+        "centerBefore": {
+          "transform": "matrix(0.802673, 0, 0, 0.802673, -229.108, -299.406)",
+          "width": 1440,
+          "height": 900
+        },
+        "centerAfter": {
+          "transform": "matrix(0.802673, 0, 0, 0.802673, -189.108, -279.406)",
+          "width": 1520,
+          "height": 940
+        }
+      }
+    },
+    {
+      "name": "desktop canvas: connections track measured node geometry",
+      "passed": true,
+      "details": {
+        "max": 0.0011285574088180247,
+        "scale": 0.802673
+      }
+    },
+    {
+      "name": "desktop canvas: animation frame pacing remains responsive",
+      "passed": true,
+      "details": {
+        "p95": 7.099999999999909,
+        "max": 7.099999999999909
+      }
+    },
+    {
+      "name": "mobile canvas: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "mobile canvas: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile canvas: no console errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile canvas: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "mobile canvas: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "mobile canvas: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "mobile canvas: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "mobile canvas: evidence graph complete",
+      "passed": true,
+      "details": {
+        "nodes": 18,
+        "paths": 23,
+        "zoom": "55%",
+        "transform": "translate3d(-190px, -34px, 0px) scale(0.55)"
+      }
+    },
+    {
+      "name": "mobile canvas: inspector receives focus",
+      "passed": true,
+      "details": {
+        "focus": "evidenceInspector",
+        "hidden": "false",
+        "expanded": "true"
+      }
+    },
+    {
+      "name": "mobile canvas: close restores originating node focus",
+      "passed": true,
+      "details": "technical-expert"
+    },
+    {
+      "name": "mobile canvas: node drag changes position without duplication",
+      "passed": true,
+      "details": {
+        "beforeDrag": {
+          "x": 112.5,
+          "y": 267.5,
+          "width": 165,
+          "height": 108.95156860351562
+        },
+        "afterDrag": {
+          "x": 182.5,
+          "y": 312.5,
+          "width": 165,
+          "height": 108.95156860351562
+        }
+      }
+    },
+    {
+      "name": "mobile canvas: wheel changes zoom",
+      "passed": true,
+      "details": {
+        "before": "55%",
+        "after": "91%"
+      }
+    },
+    {
+      "name": "mobile canvas: resize preserves a valid camera transform",
+      "passed": true,
+      "details": {
+        "centerBefore": {
+          "transform": "matrix(0.910431, 0, 0, 0.910431, -416.744, -315.136)",
+          "width": 390,
+          "height": 844
+        },
+        "centerAfter": {
+          "transform": "matrix(0.910431, 0, 0, 0.910431, -376.744, -295.136)",
+          "width": 470,
+          "height": 884
+        }
+      }
+    },
+    {
+      "name": "mobile canvas: connections track measured node geometry",
+      "passed": true,
+      "details": {
+        "max": 0.0027108151191301837,
+        "scale": 0.910431
+      }
+    },
+    {
+      "name": "mobile canvas: animation frame pacing remains responsive",
+      "passed": true,
+      "details": {
+        "p95": 7.000000000000227,
+        "max": 7.099999999999909
+      }
+    },
+    {
+      "name": "404 page: HTTP 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "404 page: no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "404 page: no console errors",
+      "passed": true,
+      "details": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "name": "404 page: no horizontal page overflow",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "404 page: no external runtime requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "404 page: fonts loaded",
+      "passed": true,
+      "details": "loaded"
+    },
+    {
+      "name": "404 page: Chinese document language",
+      "passed": true,
+      "details": "zh-CN"
+    },
+    {
+      "name": "unknown route is not a false success locally",
+      "passed": true,
+      "details": 404
+    },
+    {
+      "name": "robots.txt is valid and points to sitemap",
+      "passed": true,
+      "details": "User-agent: *\nAllow: /\n\nSitemap: https://akagavin-evidence-noir.pages.dev/sitemap.xml\n"
+    },
+    {
+      "name": "sitemap contains every public dossier",
+      "passed": true,
+      "details": 13
+    }
+  ]
+}

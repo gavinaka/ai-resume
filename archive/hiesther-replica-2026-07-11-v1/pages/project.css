@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "Caveat Local";
+  src: url("../assets/fonts/caveat-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code Local";
+  src: url("../assets/fonts/fira-code-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --paper: #faf8f2;
+  --paper-strong: #fffdf7;
+  --ink: #191b22;
+  --muted: #777b86;
+  --blue: #2b7fd8;
+  --blue-deep: #1f5fa8;
+  --yellow: #f4d758;
+  --line: #cbdcf1;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 300px;
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(43, 127, 216, 0.12) 1px, transparent 1.2px),
+    var(--paper);
+  background-size: 22px 22px;
+  color: var(--ink);
+  font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.project-shell {
+  width: min(840px, calc(100% - 36px));
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: clamp(46px, 8vw, 92px) 0 70px;
+}
+
+.project-loading,
+.project-error {
+  display: grid;
+  min-height: 60dvh;
+  place-items: center;
+  color: var(--muted);
+  font-family: "Fira Code Local", "Microsoft YaHei", monospace;
+  font-size: 12px;
+}
+
+.project-filebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 13px;
+  border-bottom: 1px dashed var(--line);
+  color: var(--blue-deep);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 10px;
+}
+
+.project-filebar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-filebar a:hover {
+  text-decoration: underline;
+}
+
+.project-header {
+  max-width: 700px;
+  padding: clamp(54px, 8vw, 88px) 0 48px;
+}
+
+.project-header p:first-child {
+  margin: 0 0 18px;
+  color: var(--blue);
+  font-family: "Fira Code Local", "Microsoft YaHei", monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+.project-header h1 {
+  margin: 0;
+  color: var(--blue-deep);
+  font-family: "Caveat Local", "Segoe Print", cursive;
+  font-size: clamp(54px, 10vw, 96px);
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.project-header h2 {
+  margin: 17px 0 0;
+  color: #636771;
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 500;
+}
+
+.project-summary {
+  max-width: 66ch;
+  margin: 0 0 54px;
+  color: #4d515a;
+  font-family: "STSong", "SimSun", serif;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: 1.75;
+}
+
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 54px;
+}
+
+.project-fact {
+  min-height: 126px;
+  padding: 18px;
+  border: 1px dashed var(--line);
+  border-radius: 7px;
+  background: rgba(255, 253, 247, 0.88);
+  color: #4f545e;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.project-fact::before {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 17px;
+  background: var(--yellow);
+  content: "";
+}
+
+.project-boundary {
+  padding: 22px 0 0;
+  border-top: 1px solid #e8e5de;
+  color: #8a8d95;
+  font-family: "Fira Code Local", "Microsoft YaHei", monospace;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+@media (max-width: 680px) {
+  .project-shell {
+    width: min(100% - 28px, 840px);
+    padding-top: 28px;
+  }
+
+  .project-filebar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-header {
+    padding: 50px 0 36px;
+  }
+
+  .project-header h1 {
+    font-size: clamp(48px, 17vw, 74px);
+  }
+
+  .project-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .project-fact {
+    min-height: 0;
+  }
+}

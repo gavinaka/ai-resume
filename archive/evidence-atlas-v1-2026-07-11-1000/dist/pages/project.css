@@ -1,0 +1,567 @@
+@font-face {
+  font-family: "Caveat Local";
+  src: url("../assets/fonts/caveat-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code Local";
+  src: url("../assets/fonts/fira-code-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --paper: #faf8f2;
+  --paper-strong: #fffdf7;
+  --ink: #191b22;
+  --muted: #777b86;
+  --blue: #2b7fd8;
+  --blue-deep: #1f5fa8;
+  --blue-pale: #e8f2ff;
+  --yellow: #f4d758;
+  --line: #cbdcf1;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 300px;
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(43, 127, 216, 0.12) 1px, transparent 1.2px),
+    var(--paper);
+  background-size: 22px 22px;
+  color: var(--ink);
+  font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.project-shell {
+  width: min(1160px, calc(100% - 48px));
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: clamp(46px, 8vw, 92px) 0 70px;
+}
+
+.project-loading,
+.project-error {
+  display: grid;
+  min-height: 60dvh;
+  place-items: center;
+  color: var(--muted);
+  font-family: "Fira Code Local", "Microsoft YaHei", monospace;
+  font-size: 12px;
+}
+
+.project-filebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 13px;
+  border-bottom: 1px dashed var(--line);
+  color: var(--blue-deep);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 10px;
+}
+
+.project-filebar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-filebar a:hover {
+  text-decoration: underline;
+}
+
+.project-header {
+  max-width: 700px;
+  padding: clamp(54px, 8vw, 88px) 0 48px;
+}
+
+.project-command {
+  letter-spacing: 0.16em;
+}
+
+.project-header p:first-child {
+  margin: 0 0 18px;
+  color: var(--blue);
+  font-family: "Fira Code Local", "Microsoft YaHei", monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+.project-header h1 {
+  margin: 0;
+  color: var(--blue-deep);
+  font-family: "Caveat Local", "Segoe Print", cursive;
+  font-size: clamp(54px, 10vw, 96px);
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.project-header h2 {
+  margin: 17px 0 0;
+  color: #636771;
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 500;
+}
+
+.project-summary {
+  max-width: 66ch;
+  margin: 0 0 54px;
+  color: #4d515a;
+  font-family: "STSong", "SimSun", serif;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: 1.75;
+}
+
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 0 20px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-metric {
+  display: grid;
+  min-height: 96px;
+  align-content: center;
+  gap: 6px;
+  padding: 18px 20px;
+  border-right: 1px dashed var(--line);
+}
+
+.project-metric:last-child {
+  border-right: 0;
+}
+
+.project-metric strong {
+  color: var(--blue-deep);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 24px;
+}
+
+.project-metric span {
+  color: var(--muted);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 8px;
+}
+
+.source-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 18px 0 52px;
+}
+
+.source-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  color: #777b84;
+  background: rgba(255, 253, 247, 0.9);
+  font-size: 9px;
+}
+
+.source-badge b,
+.source-chip {
+  color: var(--blue-deep);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 8px;
+}
+
+.source-badge.source-profile b,
+.source-chip.source-profile { color: #b06c14; }
+.source-badge.source-delivered b,
+.source-chip.source-delivered { color: #b63863; }
+
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 54px;
+}
+
+.project-fact {
+  min-height: 126px;
+  padding: 18px;
+  border: 1px dashed var(--line);
+  border-radius: 7px;
+  background: rgba(255, 253, 247, 0.88);
+  color: #4f545e;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.project-fact::before {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 17px;
+  background: var(--yellow);
+  content: "";
+}
+
+.project-evidence {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 44px;
+  margin: 18px 0 70px;
+}
+
+.dossier-heading {
+  display: grid;
+  grid-template-columns: 48px minmax(140px, 230px) 1fr;
+  gap: 18px;
+  align-items: baseline;
+  margin: 76px 0 12px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.dossier-heading > span {
+  color: var(--blue);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 12px;
+}
+
+.dossier-heading > div {
+  font-family: "STSong", "SimSun", serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dossier-heading > p {
+  justify-self: end;
+  max-width: 50ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.evidence-records {
+  display: grid;
+  gap: 18px;
+}
+
+.evidence-record {
+  padding: 26px;
+  border: 1px solid #e6e7e8;
+  border-radius: 7px;
+  background: rgba(255, 253, 247, 0.92);
+  box-shadow: 0 14px 40px rgba(61, 83, 112, 0.05);
+}
+
+.evidence-record-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+.evidence-id,
+.evidence-date {
+  color: var(--blue);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 9px;
+}
+
+.evidence-date {
+  color: var(--muted);
+}
+
+.source-chip {
+  margin-left: auto;
+  padding: 4px 7px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #f5f9ff;
+}
+
+.evidence-record > h3 {
+  margin: 0 0 11px;
+  color: var(--blue-deep);
+  font-family: "STSong", "SimSun", serif;
+  font-size: 24px;
+}
+
+.evidence-context {
+  max-width: 78ch;
+  margin: 0 0 24px;
+  color: #555a64;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.evidence-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+}
+
+.evidence-detail {
+  min-width: 0;
+  padding: 18px 16px 18px 0;
+}
+
+.evidence-detail + .evidence-detail {
+  padding-left: 16px;
+  border-left: 1px dashed var(--line);
+}
+
+.evidence-detail small {
+  color: var(--blue);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 8px;
+}
+
+.evidence-detail h4 {
+  margin: 7px 0 8px;
+  font-size: 12px;
+}
+
+.evidence-detail p {
+  margin: 0;
+  color: #71757e;
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.evidence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.evidence-tags span {
+  padding: 5px 8px;
+  border-radius: 4px;
+  background: var(--blue-pale);
+  color: var(--blue-deep);
+  font-size: 9px;
+}
+
+.capability-dossiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.capability-dossier {
+  position: relative;
+  min-height: 270px;
+  padding: 22px;
+  border-top: 4px solid var(--yellow);
+  background: #f6f9fd;
+}
+
+.capability-dossier small {
+  color: var(--blue);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 8px;
+}
+
+.capability-dossier h3 {
+  margin: 12px 0 10px;
+  color: var(--blue-deep);
+  font-size: 18px;
+}
+
+.capability-dossier p {
+  margin: 0 0 9px;
+  color: #656a73;
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.capability-dossier .capability-definition {
+  color: #3f444d;
+  font-size: 12px;
+}
+
+.capability-dossier .capability-boundary {
+  color: #8b7a64;
+}
+
+.capability-proof {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  left: 22px;
+  padding-top: 11px;
+  border-top: 1px dashed var(--line);
+  color: var(--blue);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 9px;
+}
+
+.project-section {
+  min-width: 0;
+  padding: 28px 0 30px;
+  border-top: 1px dashed var(--line);
+}
+
+.project-section:first-child {
+  grid-column: 1 / -1;
+}
+
+.project-section-label {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--blue);
+  font-family: "Fira Code Local", Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+.project-section h3 {
+  margin: 0 0 13px;
+  color: var(--ink);
+  font-family: "STSong", "SimSun", serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-section p,
+.project-section li {
+  color: #5f636c;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.project-section p {
+  max-width: 68ch;
+  margin: 0;
+}
+
+.project-section ul {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.project-section li::before {
+  margin-right: 8px;
+  color: var(--blue);
+  content: "↳";
+}
+
+.project-boundary {
+  display: grid;
+  gap: 9px;
+  margin-top: 70px;
+  padding: 22px 0 0;
+  border-top: 1px solid #e8e5de;
+  color: #8a8d95;
+  font-family: "Fira Code Local", "Microsoft YaHei", monospace;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.project-boundary strong {
+  color: var(--ink);
+  font-size: 11px;
+}
+
+.project-boundary small {
+  color: #aaa69d;
+  font-size: 9px;
+}
+
+@media (max-width: 680px) {
+  .project-shell {
+    width: min(100% - 28px, 1160px);
+    padding-top: 28px;
+  }
+
+  .project-filebar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-header {
+    padding: 50px 0 36px;
+  }
+
+  .project-header h1 {
+    font-size: clamp(48px, 17vw, 74px);
+  }
+
+  .project-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-metric:nth-child(2) {
+    border-right: 0;
+  }
+
+  .project-metric:nth-child(-n+2) {
+    border-bottom: 1px dashed var(--line);
+  }
+
+  .source-badge {
+    width: 100%;
+  }
+
+  .dossier-heading {
+    grid-template-columns: 34px 1fr;
+  }
+
+  .dossier-heading > p {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .evidence-detail-grid,
+  .capability-dossiers {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-detail + .evidence-detail {
+    padding-left: 0;
+    border-top: 1px dashed var(--line);
+    border-left: 0;
+  }
+
+  .evidence-record {
+    padding: 20px;
+  }
+
+  .project-evidence {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .project-section:first-child {
+    grid-column: auto;
+  }
+
+  .project-fact {
+    min-height: 0;
+  }
+}

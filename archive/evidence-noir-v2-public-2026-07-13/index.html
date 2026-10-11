@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#090a0c">
+    <meta name="description" content="AkaGavin 的公开证据档案：经营、研究、决策系统与 Agent 工程。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AkaGavin — Evidence Noir">
+    <meta property="og:description" content="不是一份传统简历，而是一套可追溯的个人决策与工程证据。">
+    <meta property="og:url" content="https://akagavin-evidence-noir.pages.dev/">
+    <meta property="og:image" content="https://akagavin-evidence-noir.pages.dev/assets/akagavin-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="AkaGavin Evidence Noir 公开证据档案">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AkaGavin — Evidence Noir">
+    <meta name="twitter:description" content="不是一份传统简历，而是一套可追溯的个人决策与工程证据。">
+    <meta name="twitter:image" content="https://akagavin-evidence-noir.pages.dev/assets/akagavin-social.jpg">
+    <link rel="canonical" href="https://akagavin-evidence-noir.pages.dev/">
+    <title>AkaGavin — Evidence Noir</title>
+    <link rel="icon" type="image/jpeg" href="assets/akagavin-portrait.jpg">
+    <link rel="preload" href="assets/fonts/fira-code-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/akagavin-editorial.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#identity">跳到主要内容</a>
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="focus-light" id="focusLight" aria-hidden="true"></div>
+    <div class="scene-curtain" id="sceneCurtain" aria-hidden="true">
+      <span>AKAGAVIN / EVIDENCE NOIR</span>
+    </div>
+    <div class="sr-only" id="statusRegion" aria-live="polite"></div>
+
+    <header class="site-header" id="siteHeader">
+      <a class="wordmark" href="#identity" aria-label="AkaGavin 首页">
+        <span class="wordmark-index">AG / 26</span>
+        <strong>AKAGAVIN</strong>
+      </a>
+      <div class="header-status">
+        <i aria-hidden="true"></i>
+        <span>PUBLIC DOSSIER</span>
+        <time id="localClock">--:--</time>
+      </div>
+    </header>
+
+    <nav class="scene-rail" aria-label="章节导航">
+      <div class="rail-line"><span id="railProgress"></span></div>
+      <button type="button" data-target="identity" class="active">
+        <span>00</span><strong>身份</strong><small>IDENTITY</small>
+      </button>
+      <button type="button" data-target="systems">
+        <span>01</span><strong>系统</strong><small>SYSTEMS</small>
+      </button>
+      <button type="button" data-target="proof">
+        <span>02</span><strong>证据</strong><small>PROOF</small>
+      </button>
+      <button type="button" data-target="contact">
+        <span>03</span><strong>边界</strong><small>BOUNDARY</small>
+      </button>
+    </nav>
+
+    <main>
+      <section class="cold-open" id="identity" data-scene="identity" aria-labelledby="heroTitle">
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/akagavin-editorial.jpg" alt="" width="1600" height="2400">
+        </div>
+        <div class="hero-shutter" aria-hidden="true"></div>
+        <div class="hero-timecode mono">TC 00:00:00:01</div>
+        <div class="hero-copy">
+          <p class="chapter-kicker mono">A PUBLIC DECISION DOSSIER / 2026</p>
+          <h1 id="heroTitle"><span>AKA</span><span>GAVIN</span></h1>
+          <p class="hero-thesis">把复杂现实转译成<br>可观察、可执行、可复盘的系统。</p>
+        </div>
+        <div class="hero-meta mono">
+          <span>PUBLIC / REMOTE</span>
+          <span>OPERATOR × SYSTEM BUILDER</span>
+          <span>42 VERIFIED PUBLIC RECORDS</span>
+        </div>
+        <button class="enter-control" type="button" data-target="manifesto">
+          <span class="enter-mark" aria-hidden="true"></span>
+          <span>进入档案</span>
+          <small>ENTER THE DOSSIER</small>
+        </button>
+      </section>
+
+      <section class="manifesto sequence" id="manifesto" data-scene="identity">
+        <div class="sequence-label mono reveal">00 / IDENTITY</div>
+        <div class="manifesto-grid">
+          <div class="manifesto-portrait reveal">
+            <img src="assets/akagavin-portrait.jpg" alt="AkaGavin 人像" width="1200" height="1200" loading="lazy">
+            <span class="frame-code mono">STILL / AG-02</span>
+          </div>
+          <div class="manifesto-copy">
+            <p class="eyebrow mono reveal">THE OPERATING THESIS</p>
+            <h2 class="reveal">我不把能力写成形容词。<br><em>我把它留下证据。</em></h2>
+            <p class="lead reveal">现实经营提供约束，市场系统检验纪律，Agent 工程把方法固化成可以维护、验证和回滚的工作流。</p>
+            <div class="identity-facts reveal" id="identityFacts"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="principle-sequence sequence" id="systems" data-scene="systems" aria-labelledby="systemsTitle">
+        <div class="sequence-label mono reveal">01 / SYSTEMS</div>
+        <header class="sequence-heading">
+          <p class="eyebrow mono reveal">DECISION DOCTRINE</p>
+          <h2 id="systemsTitle" class="reveal">原则不是口号。<br>原则是压力下仍然有效的动作协议。</h2>
+        </header>
+        <div class="principle-reel" id="principleReel"></div>
+      </section>
+
+      <section class="room-sequence" data-scene="systems" aria-labelledby="roomTitle">
+        <div class="room-intro">
+          <div>
+            <p class="eyebrow mono reveal">INTERACTIVE EVIDENCE ROOM</p>
+            <h2 id="roomTitle" class="reveal">拖动不是装饰。<br>它用来检查关系。</h2>
+          </div>
+          <p class="room-instruction reveal">移动证据、缩放视野、选择节点。连接只在聚焦时显现，让因果关系比界面本身更清楚。</p>
+        </div>
+        <div class="room-frame reveal">
+          <div class="room-framebar mono">
+            <span>ROOM / 01</span>
+            <span>LIVE RELATION MAP</span>
+            <a href="infinite-canvas.html" target="_blank" rel="noopener">OPEN FULL FRAME ↗</a>
+          </div>
+          <iframe src="infinite-canvas.html" title="AkaGavin 交互式证据关系图" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section class="proof-sequence sequence" id="proof" data-scene="proof" aria-labelledby="proofTitle">
+        <div class="sequence-label mono reveal">02 / PROOF</div>
+        <header class="sequence-heading proof-heading">
+          <div>
+            <p class="eyebrow mono reveal">SELECTED DOSSIERS</p>
+            <h2 id="proofTitle" class="reveal">不是项目陈列。<br>是判断如何成为产物。</h2>
+          </div>
+          <div class="proof-count reveal"><strong id="projectCount">11</strong><span>PUBLIC<br>DOSSIERS</span></div>
+        </header>
+        <div class="project-reel" id="projectReel"></div>
+      </section>
+
+      <section class="capability-sequence sequence" data-scene="proof" aria-labelledby="capabilityTitle">
+        <div class="capability-head">
+          <p class="eyebrow mono reveal">24 CAPABILITY ATOMS</p>
+          <h2 id="capabilityTitle" class="reveal">能力的定义、触发条件、方法和边界，必须同时成立。</h2>
+        </div>
+        <div class="capability-clusters" id="capabilityClusters"></div>
+      </section>
+
+      <section class="closing-sequence" id="contact" data-scene="contact">
+        <div class="closing-image" aria-hidden="true">
+          <img src="assets/akagavin-editorial.jpg" alt="" width="1600" height="2400" loading="lazy">
+        </div>
+        <div class="closing-copy reveal">
+          <p class="eyebrow mono">03 / PUBLIC BOUNDARY</p>
+          <h2>公开能力证据。<br>不公开私人状态。</h2>
+          <p id="privateBoundary"></p>
+          <a href="#proof">重新检查证据 <span aria-hidden="true">↑</span></a>
+        </div>
+        <footer class="closing-footer mono">
+          <span>AKA GAVIN / EVIDENCE NOIR</span>
+          <span>STATIC / PRIVATE-BY-DESIGN</span>
+          <span>© 2026</span>
+        </footer>
+      </section>
+    </main>
+
+    <script src="evidence-data.js"></script>
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
